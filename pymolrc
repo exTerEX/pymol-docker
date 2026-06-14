@@ -1,0 +1,17 @@
+# Default PyMOL startup configuration
+# This file is loaded automatically when PyMOL starts.
+
+set bg_rgb, [0.0, 0.0, 0.0]
+set antialias, 2
+set stick_radius, 0.18
+set sphere_scale, 0.25
+set cartoon_fancy_helices, 1
+set cartoon_flat_sheets, 1
+set cartoon_side_chain_helper, on
+set valence, 1
+set spec_count, 1
+set ambient, 0.5
+set ray_shadows, 0
+set depth_cue, 0
+set show_progress, 0
+set auto_zoom, 0

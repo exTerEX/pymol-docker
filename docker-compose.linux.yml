@@ -1,0 +1,15 @@
+version: "3.9"
+services:
+  pymol:
+    image: ghcr.io/exterex/pymol-docker:1.0.0
+    environment:
+      DISPLAY: "${DISPLAY}"
+      WAYLAND_DISPLAY: "${WAYLAND_DISPLAY}"
+      XDG_RUNTIME_DIR: "${XDG_RUNTIME_DIR}"
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix
+      - ${XDG_RUNTIME_DIR}:${XDG_RUNTIME_DIR}
+      - ${PWD}:/workspace
+      - ./license.lic:/home/pymol/.pymol/license.lic:ro
+    stdin_open: true
+    tty: true

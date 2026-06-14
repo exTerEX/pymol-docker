@@ -1,0 +1,11 @@
+version: "3.9"
+services:
+  pymol:
+    image: ghcr.io/exterex/pymol-docker:1.0.0
+    environment:
+      DISPLAY: "${DISPLAY:-host.docker.internal:0}"
+    volumes:
+      - ${PWD}:/workspace
+      - ./license.lic:/home/pymol/.pymol/license.lic:ro
+    stdin_open: true
+    tty: true
