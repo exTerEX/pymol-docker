@@ -2,6 +2,9 @@ FROM mambaorg/micromamba:2.8.1-debian13-slim
 
 ENV DEBIAN_FRONTEND=noninteractive
 ENV TZ=UTC
+ENV MAMBA_EXTRACT_THREADS=1
+ENV MAMBA_NUM_THREADS=2
+ENV MAMBA_NO_BANNER=1
 
 USER root
 
