@@ -1,4 +1,4 @@
-FROM mambaorg/micromamba:2.8.1-debian13-slim
+FROM mambaorg/micromamba:2.9.0-debian13-slim
 
 ENV DEBIAN_FRONTEND=noninteractive
 ENV TZ=UTC
